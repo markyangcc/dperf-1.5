@@ -35,7 +35,7 @@ CFLAGS += -O3 -g -I./src
 CFLAGS += -DHTTP_PARSE
 CFLAGS += -Wno-address-of-packed-member
 CFLAGS += $(shell $(PKGCONF) --cflags libdpdk)
-LDFLAGS += $(shell $(PKGCONF) --libs libdpdk) -lpthread -lrte_net_bond -lrte_bus_pci -lrte_bus_vdev
+LDFLAGS += $(shell $(PKGCONF) --libs --static libdpdk) -lpthread -lrte_net_bond -lrte_bus_pci -lrte_bus_vdev
 
 build/$(APP): $(SRCS-y)
 	mkdir -p build
