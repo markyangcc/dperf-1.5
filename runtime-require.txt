@@ -1,0 +1,2 @@
+libatomic
+libbsd
