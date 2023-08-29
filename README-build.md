@@ -1,8 +1,9 @@
 ## Build DPDK
-1. Downlaod dpdk
+1、Downlaod dpdk
+
 22.11 is prefered
 
-2. Compile DPDK
+2、Compile DPDK
 ```
 meson -Dmachine=x86-64-v2 -Ddisable_libs="" build
 ```
@@ -12,4 +13,5 @@ meson -Dmachine=x86-64-v2 -Ddisable_libs="" build
 
 ## Runtime Require
 libatomic
+
 libbsd
